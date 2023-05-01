@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
+body
+{
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #141414;
+}
+		
+a
+{
+	color: #cb00ff;
+}
+
+h1
+{
+	color: #cb00ff;
+	text-shadow: #000000 1px 0 10px;
+	-ms-transform: rotate(5deg); /* IE 9 */
+	-webkit-transform: rotate(5deg); /* Safari 3-8 */
+	transform: rotate(5deg);
+	margin-top: 35px;
+	margin-bottom: 35px;
+	animation: text-shadow 2.0s ease-in-out;
+	font-weight: bold;
+}
+
+.logo
+{
+    height: 80px;
+    width: 30px;
+}
+
+.box1
+{
+	float: left;
+	width: 80%;
+}
+
+.box2
+{
+	float: right;
+	margin-top: 40px;
+}
+
+.nav-link
+{
+	background-color: black;
+}
+
+.clearfix:after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.table
+{
+	table-layout: fixed;
+	border-top-color: #141414;
+	overflow: hidden;
+}
+		
+.table td
+{
+	overflow-x: auto;
+	overflow: hidden;
+}
+		
+.table thead th
+{
+	background-color: #141414;
+	border-color: #141414 !important;
+	color: #cb00ff;
+	overflow: hidden;
+}
+		
+.table thead tr td a
+{
+	color: #cb00ff;
+	overflow: hidden;
+}
+
+footer
+{
+	text-align: center;
+	background-color: black;
+	color: white;
+}

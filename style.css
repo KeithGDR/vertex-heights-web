@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
+body
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #141414;
+}
+
+a
+{
+	color: #cb00ff;
+}
+
+h1
+{
+	color: #cb00ff;
+	text-shadow: #000000 1px 0 10px;
+	-ms-transform: rotate(5deg); /* IE 9 */
+	-webkit-transform: rotate(5deg); /* Safari 3-8 */
+	transform: rotate(5deg);
+	margin-top: 35px;
+	margin-bottom: 35px;
+	animation: text-shadow 2.0s ease-in-out;
+	font-weight: bold;
+}
+
+.logo
+{
+    height: 80px;
+    width: 30px;
+}
+
+.box1
+{
+	float: left;
+	width: 100%;
+}
+
+.box2
+{
+	float: right;
+}
+
+.nav-link
+{
+	background-color: black;
+}
+
+.clearfix:after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.table
+{
+	table-layout: fixed;
+	border-top-color: #141414;
+	overflow: hidden;
+}
+		
+.table td
+{
+	overflow-x: auto;
+	overflow: hidden;
+}
+		
+.table thead th
+{
+	background-color: #141414;
+	border-color: #141414 !important;
+	color: #cb00ff;
+	overflow: hidden;
+}
+		
+.table thead tr td a
+{
+	color: #cb00ff;
+	overflow: hidden;
+}
+
+footer
+{
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+/*the container must be positioned relative:*/
+.custom-select
+{
+	position: relative;
+	font-family: Arial;
+}
+
+.custom-select select
+{
+	display: none; /*hide original SELECT element:*/
+}
+
+.select-selected
+{
+	background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after
+{
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after
+{
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected
+{
+	color: #ffffff;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	user-select: none;
+}
+
+/*style items (options):*/
+.select-items
+{
+	position: absolute;
+	background-color: DodgerBlue;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide
+{
+	display: none;
+}
+
+.select-items div:hover, .same-as-selected
+{
+	background-color: rgba(0, 0, 0, 0.1);
+}
